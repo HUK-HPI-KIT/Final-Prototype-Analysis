@@ -2,3 +2,6 @@ torch
 numpy
 transformers
 deep-translator
+wandb
+nltk
+sklearn

@@ -1,0 +1,2361 @@
+{
+    "products": {
+        "Privathaftpflichtversicherung": "Jeder sollte eine private Haftpflichtversicherung abschließen, denn sie schützt vor Schäden, die in die Millionen Euro gehen können. Zu unterscheiden sind folgende Tarife:     Im Single-Tarif haben nur Sie als Versicherungsnehmer Versicherungsschutz.     Im Familien-Tarif wird der Schutz auf weitere Personen erweitert. Für Ehegatten oder Personen, die in eheähnlicher Gemeinschaft leben, reicht eine gemeinsame private Haftpflichtversicherung aus. Bei eheähnlichen Gemeinschaften sollte der Partner jedoch in der Police erwähnt werden. Kinder sind generell mitversichert, solange sie sich noch im ersten ununterbrochenen Ausbildungsgang befinden. Für Familien und in festen Partnerschaften mit gemeinsamer Wohnung sind Familien-Tarife in der Regel günstiger als sich einzeln zu versichern. Die private Haftpflichtversicherung deckt nur den privaten Bereich ab. Wichtig (vor allem für Freiberufler / Selbstständige) kann deshalb zusätzlich noch eine Berufs- oder Betriebshaftpflichtversicherung sein. Bei einigen Berufszweigen ist außerdem eine Vermögensschadenhaftpflichtversicherung sinnvoll.",
+        "Tierhalterhaftpflichtversicherung": "Warum brauche ich eine Tierhalterhaftpflicht? Es kann immer etwas passieren. Deswegen haben wir Menschen eine Privat-Haftpflichtversicherung, damit wir nicht für einen möglicherweise sehr hohen Schaden aufkommen müssen. Als Besitzer haften Sie für Ihre Tiere in unbegrenzter Höhe, auch wenn Sie persönlich an dem verursachten Schaden keine Schuld tragen. Wer schon länger ein Tier besitzt, weiß wahrscheinlich nur allzu gut, dass Hund und Pferd oftmals ihren ganz eigenen Kopf haben und somit in manchen Situationen unberechenbar sind. Ohne eine Tierhalterhaftpflicht kann Sie ein Fehler Ihres Tieres teuer zu stehen kommen. Denn Schäden die der Vierbeiner verursacht, sind nicht in der Privathaftpflichtversicherung abgedeckt. Mit einer guten Hundehaftpflicht oder Pferdehaftpflicht können Sie die Zeit mit Ihrem Vierbeiner genießen, ohne sich über mögliche Schadensforderungen Sorgen machen zu müssen.",
+        "Haus- und Grundbesitzerhaftpflichtversicherung": "Falls Du Deine Immobilie nicht selbst bewohnst, sondern sie an jemanden vermietet hast (oder einfach nur überlassen), dann ist die Haus- und Grundbesitzerhaftpflicht eine sinnvolle Versicherung. Denn als Eigentümer hast Du sogenannte Verkehrssicherungspflichten. Du musst also dafür sorgen, dass von Deinem Eigentum keine Gefahr für Dritte ausgeht. Wenn Du hingegen in Deinem eigenen Haus wohnst, bist über Deine private Haft­pflicht­ver­si­che­rung abgesichert. Das gilt auch, falls Du als Eigenheimbesitzer einzelne Zimmer vermietest oder das Zuhause ab und an als Ferienhaus anbietest. Solange Du baust, übernimmt die Bauherrenhaftpflicht den Ver­si­che­rungs­schutz."
+    },
+    "userAnswers": [
+        [
+            "Where come you live? rental apartment."
+        ],
+        [
+            "Where make you live? lease apartment."
+        ],
+        [
+            "Where come you live? lease apartment."
+        ],
+        [
+            "Where DO you live? lease apartment."
+        ],
+        [
+            "Where make you live? condominium.",
+            "What pets come you have? weenie."
+        ],
+        [
+            "Where come you live? condominium."
+        ],
+        [
+            "Where DO you live? condominium."
+        ],
+        [
+            "Where do you live? condominium."
+        ],
+        [
+            "Where come you live? condo."
+        ],
+        [
+            "Where do you live? condo."
+        ],
+        [
+            "Where make you live? detached household."
+        ],
+        [
+            "Where come you live? detached household.",
+            "What pets come you have? go_after."
+        ],
+        [
+            "Where DO you live? detached household."
+        ],
+        [
+            "Where do you live? detached household."
+        ],
+        [
+            "Where make you live? separated house.",
+            "What pets DO you have? domestic_dog."
+        ],
+        [
+            "Where come you live? separated house."
+        ],
+        [
+            "Where DO you live? separated house."
+        ],
+        [
+            "Where come you live? detached sign_of_the_zodiac."
+        ],
+        [
+            "Where DO you live? detached sign_of_the_zodiac.",
+            "Do you take pets? No."
+        ],
+        [
+            "Where do you live? detached sign_of_the_zodiac."
+        ],
+        [
+            "Where make you live? detached business_firm."
+        ],
+        [
+            "Where come you live? detached business_firm."
+        ],
+        [
+            "Where come you live? detached planetary_house."
+        ],
+        [
+            "Where make you live? detached theatre."
+        ],
+        [
+            "Where come you live? detached theatre."
+        ],
+        [
+            "Where DO you live? detached theatre."
+        ],
+        [
+            "Where do you live? detached theatre."
+        ],
+        [
+            "Where make you live? detached mansion."
+        ],
+        [
+            "Where DO you live? detached mansion."
+        ],
+        [
+            "Where do you live? detached mansion."
+        ],
+        [
+            "Where DO you live? detached firm."
+        ],
+        [
+            "Where do you live? detached firm."
+        ],
+        [
+            "Where make you live? detached domiciliate."
+        ],
+        [
+            "Where DO you live? detached domiciliate."
+        ],
+        [
+            "Where do you live? detached domiciliate."
+        ],
+        [
+            "Where make you live? detached menage.",
+            "Where DO you live? detached theater."
+        ],
+        [
+            "Where come you live? detached menage.",
+            "do you rent your apartment no.",
+            "What pets make you have? chase."
+        ],
+        [
+            "Where DO you live? detached menage."
+        ],
+        [
+            "Where do you live? detached menage."
+        ],
+        [
+            "Where make you live? detached theater.",
+            "come you rent your apartment No.",
+            "Where DO you live? for economic_rent."
+        ],
+        [
+            "Where come you live? detached theater."
+        ],
+        [
+            "Where do you live? detached theater."
+        ],
+        [
+            "Where come you live? detached family.",
+            "Where do you live? detached business_firm."
+        ],
+        [
+            "Where DO you live? detached family."
+        ],
+        [
+            "Where do you live? detached family.",
+            "What pets come you have? hot_dog."
+        ],
+        [
+            "Where come you live? detached sign."
+        ],
+        [
+            "Where do you live? detached sign."
+        ],
+        [
+            "Where make you live? detached house."
+        ],
+        [
+            "Where DO you live? detached house."
+        ],
+        [
+            "Where do you live? detached house.",
+            "Where do you live? lease apartment."
+        ],
+        [
+            "Where make you live? detached put_up.",
+            "Where DO you live? for lease."
+        ],
+        [
+            "Where come you live? detached put_up."
+        ],
+        [
+            "Where DO you live? detached put_up.",
+            "Where make you live? detached star_sign."
+        ],
+        [
+            "Where do you live? detached put_up."
+        ],
+        [
+            "Where come you live? detached star_sign.",
+            "What pets do you have? humble animals."
+        ],
+        [
+            "Where DO you live? detached star_sign."
+        ],
+        [
+            "Where do you live? detached star_sign.",
+            "What pets make you have? heel.",
+            "What pets do you have? go_after."
+        ],
+        [
+            "Where make you live? detached home.",
+            "Where DO you live? for tear.",
+            "Where DO you live? rental apartment."
+        ],
+        [
+            "Where DO you live? detached home."
+        ],
+        [
+            "Where do you live? detached home.",
+            "Where make you live? for engage."
+        ],
+        [
+            "Where make you live? for snag."
+        ],
+        [
+            "Where come you live? for snag."
+        ],
+        [
+            "Where DO you live? for snag.",
+            "What pets do you have? heel."
+        ],
+        [
+            "Where do you live? for snag.",
+            "Where make you live? detached firm."
+        ],
+        [
+            "Where make you live? for charter."
+        ],
+        [
+            "Where come you live? for charter.",
+            "Where come you live? detached house."
+        ],
+        [
+            "Where DO you live? for charter."
+        ],
+        [
+            "Where do you live? for charter."
+        ],
+        [
+            "Where make you live? for pull."
+        ],
+        [
+            "Where come you live? for pull."
+        ],
+        [
+            "Where do you live? for pull.",
+            "What pets make you have? knight."
+        ],
+        [
+            "Where come you live? for engage.",
+            "Where come you live? for economic_rent.",
+            "What pets come you have? chase_after."
+        ],
+        [
+            "Where DO you live? for engage."
+        ],
+        [
+            "Where do you live? for engage."
+        ],
+        [
+            "Where come you live? for split.",
+            "Where DO you live? for pull."
+        ],
+        [
+            "Where DO you live? for split."
+        ],
+        [
+            "Where do you live? for split."
+        ],
+        [
+            "Where make you live? for hire.",
+            "Do you make pets? no."
+        ],
+        [
+            "Where DO you live? for hire."
+        ],
+        [
+            "Where do you live? for hire.",
+            "What pets make you have? Canis_familiaris."
+        ],
+        [
+            "Where make you live? for rent.",
+            "What pets make you have? pocket-sized animals."
+        ],
+        [
+            "Where come you live? for rent."
+        ],
+        [
+            "Where DO you live? for rent.",
+            "Where DO you live? detached business_firm.",
+            "What pets come you have? blackguard."
+        ],
+        [
+            "Where do you live? for rent.",
+            "What pets do you have? trail.",
+            "What pets come you have? tag."
+        ],
+        [
+            "Where make you live? for lease."
+        ],
+        [
+            "Where come you live? for lease.",
+            "What pets DO you have? tag.",
+            "What pets DO you have? hamster."
+        ],
+        [
+            "Where do you live? for lease.",
+            "Where make you live? condo."
+        ],
+        [
+            "Where make you live? for rend."
+        ],
+        [
+            "Where come you live? for rend."
+        ],
+        [
+            "Where DO you live? for rend.",
+            "Where DO you live? condo.",
+            "What pets make you have? chase_after."
+        ],
+        [
+            "Where do you live? for rend."
+        ],
+        [
+            "Where do you live? for economic_rent."
+        ],
+        [
+            "Where make you live? for rive."
+        ],
+        [
+            "Where come you live? for rive."
+        ],
+        [
+            "Where do you live? for rive."
+        ],
+        [
+            "Where come you live? for tear.",
+            "What pets make you have? hound."
+        ],
+        [
+            "Where do you live? for tear."
+        ],
+        [
+            "Where make you live? for rip."
+        ],
+        [
+            "Where come you live? for rip."
+        ],
+        [
+            "Where do you live? for rip."
+        ],
+        [
+            "DO you rent your apartment no.",
+            "do you rip your apartment No."
+        ],
+        [
+            "do you charter your apartment no."
+        ],
+        [
+            "do you split your apartment no."
+        ],
+        [
+            "do you lease your apartment no.",
+            "Where DO you live? detached sign."
+        ],
+        [
+            "do you pull your apartment no."
+        ],
+        [
+            "do you snag your apartment no.",
+            "Where come you live? detached mansion."
+        ],
+        [
+            "do you engage your apartment no."
+        ],
+        [
+            "do you rip your apartment no."
+        ],
+        [
+            "do you rive your apartment no."
+        ],
+        [
+            "do you economic_rent your apartment no."
+        ],
+        [
+            "do you rend your apartment no."
+        ],
+        [
+            "make you rent your apartment no."
+        ],
+        [
+            "do you hire your apartment no."
+        ],
+        [
+            "DO you rent your apartment No."
+        ],
+        [
+            "do you charter your apartment No."
+        ],
+        [
+            "do you split your apartment No."
+        ],
+        [
+            "do you lease your apartment No."
+        ],
+        [
+            "do you pull your apartment No."
+        ],
+        [
+            "do you snag your apartment No.",
+            "do you tear your apartment no."
+        ],
+        [
+            "do you engage your apartment No."
+        ],
+        [
+            "do you rive your apartment No.",
+            "Where make you live? detached family."
+        ],
+        [
+            "do you economic_rent your apartment No.",
+            "What pets DO you have? chase."
+        ],
+        [
+            "do you rend your apartment No."
+        ],
+        [
+            "make you rent your apartment No."
+        ],
+        [
+            "do you hire your apartment No."
+        ],
+        [
+            "Do you give pets? no.",
+            "Where come you live? detached home."
+        ],
+        [
+            "Do you take pets? no."
+        ],
+        [
+            "come you have pets? no."
+        ],
+        [
+            "make you have pets? no."
+        ],
+        [
+            "Do you let pets? no."
+        ],
+        [
+            "DO you have pets? no."
+        ],
+        [
+            "Do you get pets? no.",
+            "Where make you live? for economic_rent.",
+            "Where make you live? detached sign."
+        ],
+        [
+            "Do you have pets? no.",
+            "What pets make you have? sawhorse."
+        ],
+        [
+            "do you have pets? no."
+        ],
+        [
+            "Do you give pets? No."
+        ],
+        [
+            "come you have pets? No."
+        ],
+        [
+            "Do you let pets? No.",
+            "Where make you live? for split."
+        ],
+        [
+            "Do you make pets? No.",
+            "What pets DO you have? humble animals."
+        ],
+        [
+            "DO you have pets? No.",
+            "What pets do you have? bounder.",
+            "What pets come you have? knight."
+        ],
+        [
+            "Do you have pets? No."
+        ],
+        [
+            "What pets come you have? hamster."
+        ],
+        [
+            "What pets make you have? hamster."
+        ],
+        [
+            "What pets do you have? hamster."
+        ],
+        [
+            "What pets come you have? little animals."
+        ],
+        [
+            "What pets make you have? little animals.",
+            "Where make you live? detached sign_of_the_zodiac."
+        ],
+        [
+            "What pets do you have? little animals."
+        ],
+        [
+            "What pets come you have? small-scale animals."
+        ],
+        [
+            "What pets make you have? small-scale animals."
+        ],
+        [
+            "What pets do you have? small-scale animals."
+        ],
+        [
+            "What pets DO you have? small-scale animals.",
+            "What pets make you have? detent.",
+            "What pets make you have? firedog."
+        ],
+        [
+            "What pets come you have? small animals."
+        ],
+        [
+            "What pets make you have? small animals."
+        ],
+        [
+            "What pets do you have? small animals.",
+            "What pets do you have? pawl.",
+            "Where do you live? detached planetary_house."
+        ],
+        [
+            "What pets DO you have? small animals."
+        ],
+        [
+            "What pets come you have? modest animals."
+        ],
+        [
+            "What pets make you have? modest animals."
+        ],
+        [
+            "What pets do you have? modest animals."
+        ],
+        [
+            "What pets DO you have? modest animals."
+        ],
+        [
+            "What pets come you have? low animals."
+        ],
+        [
+            "What pets make you have? low animals."
+        ],
+        [
+            "What pets do you have? low animals.",
+            "Where come you live? detached firm."
+        ],
+        [
+            "What pets DO you have? low animals."
+        ],
+        [
+            "What pets come you have? humble animals."
+        ],
+        [
+            "What pets make you have? humble animals.",
+            "What pets make you have? click."
+        ],
+        [
+            "What pets come you have? pocket-sized animals."
+        ],
+        [
+            "What pets do you have? pocket-sized animals."
+        ],
+        [
+            "What pets DO you have? pocket-sized animals."
+        ],
+        [
+            "What pets come you have? Canis_familiaris."
+        ],
+        [
+            "What pets do you have? Canis_familiaris."
+        ],
+        [
+            "What pets DO you have? Canis_familiaris."
+        ],
+        [
+            "What pets make you have? tag."
+        ],
+        [
+            "What pets do you have? tag.",
+            "What pets make you have? bounder."
+        ],
+        [
+            "What pets come you have? wiener.",
+            "come you rent your apartment no."
+        ],
+        [
+            "What pets make you have? wiener.",
+            "Where make you live? detached planetary_house."
+        ],
+        [
+            "What pets do you have? wiener."
+        ],
+        [
+            "What pets DO you have? wiener."
+        ],
+        [
+            "What pets come you have? frank."
+        ],
+        [
+            "What pets make you have? frank."
+        ],
+        [
+            "What pets do you have? frank."
+        ],
+        [
+            "What pets DO you have? frank."
+        ],
+        [
+            "What pets come you have? trail."
+        ],
+        [
+            "What pets make you have? trail."
+        ],
+        [
+            "What pets DO you have? trail."
+        ],
+        [
+            "What pets come you have? track."
+        ],
+        [
+            "What pets do you have? track."
+        ],
+        [
+            "What pets DO you have? track."
+        ],
+        [
+            "What pets make you have? blackguard.",
+            "What pets DO you have? dog."
+        ],
+        [
+            "What pets do you have? blackguard."
+        ],
+        [
+            "What pets DO you have? blackguard."
+        ],
+        [
+            "What pets come you have? detent."
+        ],
+        [
+            "What pets do you have? detent.",
+            "What pets do you have? sawbuck.",
+            "do you have pets? No.",
+            "Where DO you live? detached planetary_house.",
+            "What pets come you have? Equus_caballus."
+        ],
+        [
+            "What pets come you have? hound."
+        ],
+        [
+            "What pets do you have? hound."
+        ],
+        [
+            "What pets DO you have? hound."
+        ],
+        [
+            "What pets come you have? domestic_dog."
+        ],
+        [
+            "What pets make you have? domestic_dog."
+        ],
+        [
+            "What pets do you have? domestic_dog."
+        ],
+        [
+            "What pets come you have? dog."
+        ],
+        [
+            "What pets make you have? dog.",
+            "What pets DO you have? go_after.",
+            "Where DO you live? for rive."
+        ],
+        [
+            "What pets do you have? dog."
+        ],
+        [
+            "What pets come you have? heel."
+        ],
+        [
+            "What pets DO you have? heel."
+        ],
+        [
+            "What pets come you have? chase."
+        ],
+        [
+            "What pets do you have? chase."
+        ],
+        [
+            "What pets come you have? pawl."
+        ],
+        [
+            "What pets make you have? pawl."
+        ],
+        [
+            "What pets DO you have? pawl.",
+            "Where do you live? separated house."
+        ],
+        [
+            "What pets do you have? chase_after.",
+            "What pets DO you have? hot_dog.",
+            "Where make you live? rental apartment.",
+            "What pets make you have? frankfurter."
+        ],
+        [
+            "What pets DO you have? chase_after.",
+            "Do you get pets? No."
+        ],
+        [
+            "What pets make you have? go_after.",
+            "What pets do you have? horse."
+        ],
+        [
+            "What pets come you have? cad."
+        ],
+        [
+            "What pets make you have? cad."
+        ],
+        [
+            "What pets do you have? cad.",
+            "What pets DO you have? detent."
+        ],
+        [
+            "What pets DO you have? cad."
+        ],
+        [
+            "What pets come you have? hotdog."
+        ],
+        [
+            "What pets do you have? hotdog.",
+            "Where make you live? for tear."
+        ],
+        [
+            "What pets DO you have? hotdog."
+        ],
+        [
+            "What pets come you have? wienerwurst."
+        ],
+        [
+            "What pets make you have? wienerwurst."
+        ],
+        [
+            "What pets do you have? wienerwurst."
+        ],
+        [
+            "What pets come you have? firedog."
+        ],
+        [
+            "What pets do you have? firedog."
+        ],
+        [
+            "What pets DO you have? firedog."
+        ],
+        [
+            "What pets come you have? dog-iron.",
+            "Where DO you live? for rip."
+        ],
+        [
+            "What pets make you have? dog-iron."
+        ],
+        [
+            "What pets do you have? dog-iron.",
+            "What pets make you have? horse_cavalry.",
+            "Where do you live? rental apartment."
+        ],
+        [
+            "What pets DO you have? dog-iron."
+        ],
+        [
+            "What pets make you have? weenie."
+        ],
+        [
+            "What pets do you have? weenie."
+        ],
+        [
+            "What pets DO you have? weenie."
+        ],
+        [
+            "What pets come you have? frankfurter."
+        ],
+        [
+            "What pets do you have? frankfurter."
+        ],
+        [
+            "What pets DO you have? frankfurter."
+        ],
+        [
+            "What pets come you have? tail."
+        ],
+        [
+            "What pets make you have? tail."
+        ],
+        [
+            "What pets do you have? tail."
+        ],
+        [
+            "What pets DO you have? tail."
+        ],
+        [
+            "What pets come you have? give_chase."
+        ],
+        [
+            "What pets make you have? give_chase.",
+            "What pets DO you have? wienerwurst."
+        ],
+        [
+            "What pets do you have? give_chase.",
+            "What pets come you have? cavalry."
+        ],
+        [
+            "What pets DO you have? give_chase."
+        ],
+        [
+            "What pets come you have? click."
+        ],
+        [
+            "What pets do you have? click.",
+            "What pets DO you have? little animals."
+        ],
+        [
+            "What pets DO you have? click.",
+            "make you have pets? No."
+        ],
+        [
+            "What pets come you have? frump."
+        ],
+        [
+            "What pets do you have? frump."
+        ],
+        [
+            "What pets DO you have? frump."
+        ],
+        [
+            "What pets come you have? bounder."
+        ],
+        [
+            "What pets DO you have? bounder."
+        ],
+        [
+            "What pets make you have? hot_dog.",
+            "What pets make you have? track."
+        ],
+        [
+            "What pets do you have? hot_dog."
+        ],
+        [
+            "What pets come you have? andiron."
+        ],
+        [
+            "What pets make you have? andiron.",
+            "What pets make you have? frump."
+        ],
+        [
+            "What pets do you have? andiron."
+        ],
+        [
+            "What pets DO you have? andiron."
+        ],
+        [
+            "What pets come you have? sawhorse."
+        ],
+        [
+            "What pets do you have? sawhorse.",
+            "do you tear your apartment No."
+        ],
+        [
+            "What pets DO you have? sawhorse."
+        ],
+        [
+            "What pets make you have? Equus_caballus."
+        ],
+        [
+            "What pets do you have? Equus_caballus."
+        ],
+        [
+            "What pets DO you have? Equus_caballus."
+        ],
+        [
+            "What pets come you have? sawbuck."
+        ],
+        [
+            "What pets make you have? sawbuck."
+        ],
+        [
+            "What pets DO you have? sawbuck."
+        ],
+        [
+            "What pets come you have? buck.",
+            "Where come you live? for hire."
+        ],
+        [
+            "What pets make you have? buck.",
+            "do you rent your apartment No.",
+            "What pets DO you have? horse."
+        ],
+        [
+            "What pets do you have? buck."
+        ],
+        [
+            "What pets DO you have? buck."
+        ],
+        [
+            "What pets do you have? knight.",
+            "What pets make you have? hotdog."
+        ],
+        [
+            "What pets DO you have? knight."
+        ],
+        [
+            "What pets come you have? gymnastic_horse."
+        ],
+        [
+            "What pets make you have? gymnastic_horse."
+        ],
+        [
+            "What pets do you have? gymnastic_horse."
+        ],
+        [
+            "What pets DO you have? gymnastic_horse."
+        ],
+        [
+            "What pets come you have? horse."
+        ],
+        [
+            "What pets make you have? horse.",
+            "Where come you live? detached domiciliate."
+        ],
+        [
+            "What pets make you have? cavalry."
+        ],
+        [
+            "What pets do you have? cavalry."
+        ],
+        [
+            "What pets DO you have? cavalry."
+        ],
+        [
+            "What pets come you have? horse_cavalry."
+        ],
+        [
+            "What pets do you have? horse_cavalry."
+        ],
+        [
+            "What pets DO you have? horse_cavalry."
+        ]
+    ],
+    "recommendations": [
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0
+        ]
+    ]
+}

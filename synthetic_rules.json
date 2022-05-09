@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Wo wohnst du?",
+        "answers": [
+            ["Mietwohnung", ["Haus- und Grundbesitzerhaftpflichtversicherung", 0]],
+            ["Eigentumswohnung", ["Haus- und Grundbesitzerhaftpflichtversicherung", 1]],
+            ["Einfamilienhaus", ["Haus- und Grundbesitzerhaftpflichtversicherung", 1]],
+            ["zur Miete", ["Haus- und Grundbesitzerhaftpflichtversicherung", 0]]
+        ]
+    },
+    {
+        "question": "Vermietest du deine Wohnung?",
+        "answers": [
+            ["Ja", ["Haus- und Grundbesitzerhaftpflichtversicherung", 1]],
+            ["Nein", ["Haus- und Grundbesitzerhaftpflichtversicherung", 0]]
+        ]
+    },
+    {
+        "question": "Hast du Haustiere?",
+        "answers": [
+            ["Ja", ["Tierhalterhaftpflichtversicherung", 1]],
+            ["Nein", ["Tierhalterhaftpflichtversicherung", 0]]
+        ]
+    },
+    {
+        "question": "Welche Haustiere hast du?",
+        "answers": [
+            ["Hamster", ["Tierhalterhaftpflichtversicherung", 0]],
+            ["Kleingetier", ["Tierhalterhaftpflichtversicherung", 0]],
+            ["Hund", ["Tierhalterhaftpflichtversicherung", 0]],
+            ["Pferd", ["Tierhalterhaftpflichtversicherung", 0]]
+        ]
+    }
+]

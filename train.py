@@ -28,20 +28,22 @@ from pathlib import Path
 from transformers import AutoTokenizer, Trainer, TrainingArguments
 from dataset import ProductDataset
 from model import InsurwayRecommender
+from sklearn.model_selection import train_test_split
 
 from utils import set_logging
 
 def main(args: argparse.Namespace) -> None:
     set_logging(args.log_file, args.log_level, args.log_stdout)
-    tokenizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
+    tokenizer = AutoTokenizer.from_pretrained("roberta-base")
     
     train_dataset = ProductDataset(tokenizer, args.data_path, args.force_rebuild)
     if args.mode == "train":
         model = InsurwayRecommender.from_pretrained(
-            "xlm-roberta-base", config={"num_classes": 3}   
+            "roberta-base" 
         )
-        train_args = TrainingArguments("test-trainer", num_train_epochs=4, fp16=True, do_eval=False)
-        trainer = Trainer(model, train_args, train_dataset=train_dataset, tokenizer=tokenizer)
+        train_split, test_split = train_test_split(train_dataset, test_size=0.1)
+        train_args = TrainingArguments("test-trainer", num_train_epochs=30, fp16=True, do_eval=True, per_device_train_batch_size=2)
+        trainer = Trainer(model, train_args, train_dataset=train_split, eval_dataset=test_split, tokenizer=tokenizer)
         trainer.train()
         model.save_pretrained("trained_models")
     if args.mode == "inference":
@@ -49,14 +51,17 @@ def main(args: argparse.Namespace) -> None:
         user_answers = []
         while True:
             user_input = input("User: ")
+            print("got>", user_input, "<")
             if user_input == "end":
                 break
             if user_input == "clear":
                 user_answers = []
+                print("cleared!")
+                continue
             user_answers.append(user_input)
             model_input = train_dataset.build_data_point(user_answers)
-            prediction = model(model_input)
-            print("Model:\n", "\n".join(train_dataset.get_ranked_products(prediction)))
+            _, prediction = model(**model_input)
+            print("Model:", "\n\t" + "\n\t".join(train_dataset.get_ranked_products(prediction)))
     
 
 if __name__ == "__main__":
@@ -65,9 +70,9 @@ if __name__ == "__main__":
     parser.add_argument("--log-level", type=str, default="info",
                      choices=["debug", "info", "warning", "error", "critical"],
                      help="log level for logging message output")
-    parser.add_argument("--log-file", type=str, default="log.log",
+    parser.add_argument("--log-file", type=str, default=None,
                      help="output file path for logging. default to stdout")
-    parser.add_argument("--log-stdout", action="store_true", default=False,
+    parser.add_argument("--log-stdout", action="store_true", default=True,
                      help="toggles force logging to stdout. if a log file is specified, logging will be "
                      "printed to both the log file and stdout")
     parser.add_argument("--data-path", type=str, required=True,
