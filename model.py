@@ -17,8 +17,7 @@ class InsurwayRecommender(PreTrainedModel):
         self.fc = Sequential(
             Linear(config.hidden_size, config.hidden_size//2),
             ReLU(),
-            Linear(config.hidden_size//2, 1),
-            Sigmoid(),
+            Linear(config.hidden_size//2, 1)
         )
         self.loss = BCEWithLogitsLoss()
         self.init_weights()
