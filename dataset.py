@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import chardet
+from io import StringIO
 import torch
 from logging.handlers import DEFAULT_SOAP_LOGGING_PORT
 from site import USER_BASE
@@ -5,6 +8,7 @@ from tqdm import tqdm
 from pathlib import Path
 from torch.utils.data import Dataset
 import json
+import pandas as pd
 import logging
 import tarfile
 import pickle
@@ -121,21 +125,58 @@ class TabularDataset(Dataset):
             self.load_cached_dataset()
     
     def download_dataset(self):
-        self.data_path = self.cache_dir / 'original_dataset' / 'file.tar.gz'
-        logging.info(f"dataset does not exist under given path! Downloading to {str(self.data_path)}")
-        self.data_path.parent.mkdir(parents=True, exist_ok=True)
+        download_path = self.cache_dir / 'original_dataset' / 'file.tar.gz'
+        logging.info(f"dataset {str(self.data_path)} does not exist under given path! Downloading to {str(self.data_path)}")
+        download_path.parent.mkdir(parents=True, exist_ok=True)
         dataset_file = requests.get(self.download_url)
-        with self.data_path.open("wb") as dataset_output_file:
+        with download_path.open("wb") as dataset_output_file:
             dataset_output_file.write(dataset_file.content)
         logging.info("Decompressing dataset ....")
-        with tarfile.open(self.data_path) as tar_file:
-            tar_file.extractall(self.data_path.parent)
+        with tarfile.open(download_path) as tar_file:
+            tar_file.extractall(download_path.parent)
+        self.data_path = self.cache_dir / 'original_dataset' / 'TICDATA2000.txt'
 
 
-    def build_dataset(self, tokenizer):
+    def build_dataset(self):
         with self.data_path.open() as dataset_file:
-            dataset = json.load(dataset_file)
-            
+            dataset = pd.read_csv(dataset_file, sep="\t")
+        dict_path = self.data_path.parent / "dictionary.txt"
+        with dict_path.open("r", encoding="windows-1252") as dict_file:
+            lines = dict_file.readlines()
+            entries = [entry.split(" ")[:2] for entry in lines[3:89]]
+            column_df = pd.DataFrame(entries)
+        column_names = column_df.loc[:, 1]
+        print(column_names)
+        dataset.columns = column_names
+        
+        self.dataset = pd.DataFrame()
+        self.dataset["households"] = dataset["MAANTHUI"]
+        self.dataset["household_size"] = dataset["MGEMOMV"]
+        self.dataset["age"] = dataset["MGEMLEEF"]
+        dataset.plot.hist(column=["MRELGE"], bins=100, xlim=(0,10))
+        # set the title
+        plt.title('ScatterPlot')
+        
+        # show the plot
+        plt.show()
+        self.dataset["living_situation"] = dataset[["MRELGE", "MRELSA", "MRELSA", "MFALLEEN"]].argmax(axis=1)
+        self.dataset["children"] = dataset[["MFGEKIND", "MFWEKIND"]].argmax(axis=1)
+        self.dataset["education"] = dataset[["MOPLHOOG", "MOPLMIDD", "MOPLLAAG"]].argmax(axis=1)
+        self.dataset["job"] = dataset[["MBERHOOG", "MBERZELF", "MBERBOER", "MBERMIDD", "MBERARBG", "MBERARBO"]].argmax(axis=1)
+        self.dataset["liquidity"] = dataset[["MSKA", "MSKB1", "MSKB2", "MSKC", "MSKD"]].argmax(axis=1)
+        self.dataset["house_rented"] = dataset[["MHHUUR", "MHKOOP"]].argmax(axis=1)
+        self.dataset["num_cars"] = dataset[["MAUT0", "MAUT1", "MAUT2"]].argmax(axis=1)
+        self.dataset["health_insurance"] = dataset[["MZFONDS", "MZPART"]].argmax(axis=1)
+        self.dataset["income"] = dataset[["MINKM30", "MINK3045", "MINK4575", "MINK7512", "MINK123M"]].argmax(axis=1)
+        
+        self.products = pd.DataFrame()
+        self.products["car_insurance"] = dataset["APERSAUT"]
+        self.products["private_accident_insurance"] = dataset["APERSONG"]
+        self.products["disability_insurance"] = dataset["AWAOREG"]
+        self.products["life_insurance"] = dataset["ALEVEN"]
+        self.products["property_insurance"] = dataset["AINBOED"]
+        
+        
         self.save_dataset()
     
     def save_dataset(self):
@@ -150,30 +191,33 @@ class TabularDataset(Dataset):
             self.dataset = pickle.load(cached_dataset)
         logging.info("Successfully loaded cached dataset!")
     
+    def product_names(self):
+        return [str(column) for column in self.products.columns]
+    
     def __getitem__(self, idx):
-        return self.dataset["sequences"][idx]
+        return self.dataset.iloc[idx]
 
     def __len__(self):
-        return len(self.dataset["sequences"])
+        return len(self.dataset)
     
-    def build_data_point(self, userAnswers):
-        userAnswers = [self.translator.translate(answer) for answer in userAnswers]
-        batched_input = {"input_ids": [], "attention_mask": [], "labels": []}
-        for product_description in self.dataset["products"]:
-            model_inputs = self.tokenizer(product_description, ".".join(userAnswers), padding="max_length", truncation=True)
-            # data_points.append(model_inputs)
-            batched_input["input_ids"].append(model_inputs["input_ids"])
-            batched_input["attention_mask"].append(model_inputs["attention_mask"])
-            batched_input["labels"].append(0)
+    # def build_data_point(self, userAnswers):
+    #     userAnswers = [self.translator.translate(answer) for answer in userAnswers]
+    #     batched_input = {"input_ids": [], "attention_mask": [], "labels": []}
+    #     for product_description in self.dataset["products"]:
+    #         model_inputs = self.tokenizer(product_description, ".".join(userAnswers), padding="max_length", truncation=True)
+    #         # data_points.append(model_inputs)
+    #         batched_input["input_ids"].append(model_inputs["input_ids"])
+    #         batched_input["attention_mask"].append(model_inputs["attention_mask"])
+    #         batched_input["labels"].append(0)
             
-        batched_input["input_ids"] = torch.Tensor(batched_input["input_ids"]).to(int)
-        batched_input["attention_mask"] = torch.Tensor(batched_input["attention_mask"]).to(int)
-        batched_input["labels"] = torch.Tensor(batched_input["labels"]).to(int)
-        return batched_input
+    #     batched_input["input_ids"] = torch.Tensor(batched_input["input_ids"]).to(int)
+    #     batched_input["attention_mask"] = torch.Tensor(batched_input["attention_mask"]).to(int)
+    #     batched_input["labels"] = torch.Tensor(batched_input["labels"]).to(int)
+    #     return batched_input
 
-    def get_ranked_products(self, scores):
-        product_list = list(self.dataset["products"].keys())
-        print(scores)
-        ranked_product_scores = sorted(list(zip(product_list, scores)), key=lambda a: a[1], reverse=True)
-        return [pair[0] + ", " + str(pair[1].item()) for pair in ranked_product_scores]
-        # return [pair[0] for pair in ranked_product_scores]
+    # def get_ranked_products(self, scores):
+    #     product_list = list(self.dataset["products"].keys())
+    #     print(scores)
+    #     ranked_product_scores = sorted(list(zip(product_list, scores)), key=lambda a: a[1], reverse=True)
+    #     return [pair[0] + ", " + str(pair[1].item()) for pair in ranked_product_scores]
+    #     # return [pair[0] for pair in ranked_product_scores]
