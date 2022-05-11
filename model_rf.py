@@ -24,7 +24,6 @@ class ProductForest(RandomForestClassifier):
         return float(self.predict_proba(np.expand_dims(user_information, axis=0))[0][1])
     
     def process_information(self, user_information):
-        print(user_information)
         # TODO: maybe cache estimator states (where they stopped last time) for speedup
         feature_vote = np.zeros((self.n_features_in_,), dtype=int)
         for estimator in self.estimators_:
@@ -48,6 +47,7 @@ class ProductForest(RandomForestClassifier):
 
 class ProductRecommender():
     cache_dir = "cache/model"
+    n_features = 12
     
     def __init__(self, dataset, train=False):
         self.model_store_path = Path(self.cache_dir) / "rf_model.joblib"
@@ -63,9 +63,8 @@ class ProductRecommender():
                 self.estimators[-1].fit(dataset, dataset.products[product])
                 self.estimators[-1].name = product
                 self.estimators[-1].feature_names = feature_names
-            self.n_features = len(feature_names)
             logging.info(f"Storing model at {str(self.model_store_path)}..")
-            joblib.dump(self, self.model_store_path)
+            joblib.dump(self.estimators, self.model_store_path)
             logging.info("Model successfully saved!")
         else:
             logging.info(f"Loading random forest classifiers from {str(self.model_store_path)}...")
@@ -74,7 +73,7 @@ class ProductRecommender():
     
     def infer(self, user_information):
         recommendation = {}
-        feature_vote = np.zeros((self.n_features,), dtype=int)
+        feature_vote = np.zeros((len(self.estimators[0].feature_names),), dtype=int)
         for estimator in self.estimators:
             estimator_feature_vote, product_score = estimator.process_information(user_information)
             feature_vote += estimator_feature_vote

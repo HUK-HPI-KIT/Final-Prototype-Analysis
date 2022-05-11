@@ -1,0 +1,51 @@
+{
+    "households": {
+        "question": "Wie viele Wohnsitze hast du?",
+        "answers": ["Einen", "Zwei", "mehr als drei"]
+    },
+    "household_size": {
+        "question": "Wie viele Menschen leben in deinem Haushalt?",
+        "answers": ["Einer", "Zwei", "Drei", "Vier", "Fünf", "mehr als Sechs"]
+    },
+    "age": {
+        "question": "Wie alt bist du?",
+        "answers": ["0-30", "30-40", "40-50", "50-60", "60-70", "70+"]
+    },
+    "living_situation": {
+        "question": "Was ist dein Beziehungsstatus?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "children": {
+        "question": "Wie viele Kinder hast du?",
+        "answers": ["Keine", "Eins", "Zwei", "Drei", "Vier", "Fünf", "mehr als Sechs"]
+    },
+    "education": {
+        "question": "Was ist dein höchster Bildungsabschluss?",
+        "answers": ["Hauptschule", "HauptschuleRealschule", "Abitur", "Uniabschluss"]
+    },
+    "job": {
+        "question": "jobs?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "liquidity": {
+        "question": "liquidity?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "house_rented": {
+        "question": "house_rented?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "num_cars": {
+        "question": "num_cars?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "health_insurance": {
+        "question": "health_insurance?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    },
+    "income": {
+        "question": "income?",
+        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+    }
+
+}

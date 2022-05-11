@@ -109,9 +109,14 @@ class ProductDataset(Dataset):
 class TabularDataset(Dataset):
     download_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/tic-mld/tic.tar.gz"
     
-    def __init__(self, data_path=None, force_rebuild=False, translate=True):
+    def __init__(self, question_path, data_path=None, force_rebuild=False, translate=True):
         super().__init__()
 
+        self.question_path = Path(question_path)
+        check_paths(self.question_path)
+        with self.question_path.open() as question_file:
+            self.questions = json.load(question_file)
+        
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.cache_dataset_path = self.cache_dir / cache_dataset_file_name
@@ -208,3 +213,10 @@ class TabularDataset(Dataset):
             else:
                 user_data_array[idx] = UNDEFINED_USER_INFORMATION
         return user_data_array
+
+    def user_feature_names(self):
+        return [str(column) for column in self.dataset.columns]
+
+    def get_next_question(self, feature_vote):
+        feature_to_ask = feature_vote.argmax()
+        return self.questions[self.user_feature_names()[feature_to_ask]]
