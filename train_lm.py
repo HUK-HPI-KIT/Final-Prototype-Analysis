@@ -27,7 +27,7 @@ import random
 from pathlib import Path
 from transformers import AutoTokenizer, Trainer, TrainingArguments
 from dataset import ProductDataset
-from model import InsurwayRecommender
+from model_lm import InsurwayRecommender
 from sklearn.model_selection import train_test_split
 
 from utils import set_logging
