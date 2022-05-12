@@ -20,8 +20,9 @@ def main(args: argparse.Namespace) -> None:
     
     user_data = json.loads(args.user_data)
     user_data_array = train_dataset.create_user_data_array(user_data)
-    recommendation, feature_request_vote = recommender.infer(user_data_array)
+    recommendation, feature_request_vote, significant_features = recommender.infer(user_data_array)
     next_question = train_dataset.get_next_question(feature_request_vote)
+    explanations = train_dataset.get_explanations(significant_features)
     inference_result = {
         "recommendation": recommendation,
         "fv": feature_request_vote.tolist(),

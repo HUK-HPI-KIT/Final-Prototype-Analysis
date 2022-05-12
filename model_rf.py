@@ -46,7 +46,8 @@ class ProductForest(RandomForestClassifier):
                 else:  # is leaf node
                     return np.array(tree.value[node], dtype=int).squeeze()
             recommendation_vote += traverse(0)
-        return feature_vote, self.compute_recommendation(user_information, recommendation_vote)
+        most_important_feature = self.feature_names[np.argmax(self.feature_importances_)]
+        return feature_vote, self.compute_recommendation(user_information, recommendation_vote), most_important_feature
 
 class ProductRecommender():
     cache_dir = "cache/model"
@@ -76,9 +77,11 @@ class ProductRecommender():
     def infer(self, user_information):
         recommendation = {}
         feature_vote = np.zeros((len(self.estimators[0].feature_names),), dtype=int)
+        significant_features = []
         for estimator in self.estimators:
-            estimator_feature_vote, product_score = estimator.process_information(user_information)
+            estimator_feature_vote, product_score, most_important_feature = estimator.process_information(user_information)
             feature_vote += estimator_feature_vote
             recommendation[estimator.name] = product_score
+            significant_features.append(most_important_feature)
         
-        return recommendation, feature_vote
+        return recommendation, feature_vote, significant_features

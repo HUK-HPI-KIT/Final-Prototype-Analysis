@@ -1,51 +1,62 @@
 {
     "households": {
+        "name": "Anzahl an Wohnsitzen",
         "question": "Wie viele Wohnsitze hast du?",
         "answers": ["Einen", "Zwei", "mehr als drei"]
     },
     "household_size": {
+        "name": "Haushaltsgröße",
         "question": "Wie viele Menschen leben in deinem Haushalt?",
         "answers": ["Einer", "Zwei", "Drei", "Vier", "Fünf", "mehr als Sechs"]
     },
     "age": {
+        "name": "Alter",
         "question": "Wie alt bist du?",
         "answers": ["0-30", "30-40", "40-50", "50-60", "60-70", "70+"]
     },
     "living_situation": {
+        "name": "Beziehungsstatus",
         "question": "Was ist dein Beziehungsstatus?",
         "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
     },
     "children": {
+        "name": "Anzahl an Kindern",
         "question": "Wie viele Kinder hast du?",
         "answers": ["Keine", "Eins", "Zwei", "Drei", "Vier", "Fünf", "mehr als Sechs"]
     },
     "education": {
+        "name": "Bildungsgrad",
         "question": "Was ist dein höchster Bildungsabschluss?",
         "answers": ["Hauptschule", "HauptschuleRealschule", "Abitur", "Uniabschluss"]
     },
     "job": {
-        "question": "jobs?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Job",
+        "question": "Wie ist deine berufliche Situation?",
+        "answers": ["hochrangige Arbeitskraft", "Selbstständig", "Handwerker*in", "Mittleres Management", "Facharbeiter*in", "ungelernte Arbeitskraft"]
     },
     "liquidity": {
-        "question": "liquidity?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Versicherungsbudget",
+        "question": "Würdest du eher etwas mehr zahlen, um besser abgesichert zu sein?",
+        "answers": ["Ja, definitiv", "eher Ja", "kommt drauf an", "eher Nein", "Nein, definitiv nicht"]
     },
     "house_rented": {
-        "question": "house_rented?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Mietstatus",
+        "question": "Wohnst du zur Miete?",
+        "answers": ["Ja", "Nein"]
     },
     "num_cars": {
-        "question": "num_cars?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Anzahl an Autos",
+        "question": "Wie viele Autos besitzt du?",
+        "answers": ["Ich besitze kein Auto", "Eins", "Zwei oder mehr"]
     },
     "health_insurance": {
-        "question": "health_insurance?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Krankenversicherungen",
+        "question": "Hast du eine private oder öffentliche Krankenversicherung?",
+        "answers": ["öffentlich", "privat"]
     },
     "income": {
-        "question": "income?",
-        "answers": ["verheiratet", "Mit einer Lebenspartner*in zusammenlebend", "Anderer Beziehungsstatus", "Single"]
+        "name": "Einkommen",
+        "question": "Wie viel verdienst du?",
+        "answers": ["Weniger als 30.000 Euro/Jahr", "30-45.000 Euro/Jahr", "45-75.000 Euro/Jahr", "75-122.000 Euro/Jahr", "mehr als 122.000 Euro/Jahr"]
     }
-
 }
