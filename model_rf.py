@@ -11,30 +11,6 @@ UNDEFINED_USER_INFORMATION = -1
 class ProductForest(RandomForestClassifier):
     name = ""
     feature_names = []
-    leaf_vote_lookup = []
-    
-    def build_leaf_lookup(self):
-        # for getting all leaf nodes of each subtree in order to determine
-        # final recommendation if not enough user information is provided.
-        # this way we don't have to go one random path and our recommendation is more robust
-        for estimator in self.estimators_:
-            tree = estimator.tree_
-            self.leaf_vote_lookup.append(np.zeros((len(tree.node_count), 2), dtype=int))
-            
-            def traverse(node):
-                if tree.feature[node] != _tree.TREE_UNDEFINED:
-                    entry = traverse(tree.children_left[node])
-                    entry += traverse(tree.children_right[node])
-                else:
-                    value = tree.value[node]
-                    if value == 0:
-                        entry = np.array([value, 0], dtype=int)
-                    else:
-                        entry = np.array([0, value], dtype=int)
-                self.leaf_vote_lookup[-1][node] = entry
-                return entry
-
-            traverse(0)
     
     def compute_recommendation(self, user_information, recommendation_vote):
         # TODO: maybe already put this in tree traversal for speedup
@@ -51,7 +27,7 @@ class ProductForest(RandomForestClassifier):
         # TODO: maybe cache estimator states (where they stopped last time) for speedup
         feature_vote = np.zeros((self.n_features_in_,), dtype=int)
         recommendation_vote = np.array([1, 0], dtype=int)
-        for idx, estimator in enumerate(self.estimators_):
+        for estimator in self.estimators_:
             tree = estimator.tree_
             
             def traverse(node):
@@ -60,18 +36,17 @@ class ProductForest(RandomForestClassifier):
                     if user_information[feature_idx] == UNDEFINED_USER_INFORMATION:
                         feature_vote[feature_idx] += 1
                         # if we reach a split where we don't have enough information we 
-                        # return the number of leafs below this node that vote for 0 and the number of leafs voting 1
-                        return self.leaf_vote_lookup[idx][node]
+                        # return the number of samples that did have the insurance and the number of samples that didn't
+                        return np.array(tree.value[node], dtype=int).squeeze()
                     threshold = tree.threshold[node]
                     if user_information[feature_idx] <= threshold:
-                        traverse(tree.children_left[node])
+                        return traverse(tree.children_left[node])
                     else:
-                        traverse(tree.children_right[node])
+                        return traverse(tree.children_right[node])
                 else:  # is leaf node
-                    return self.leaf_vote_lookup[idx][node]
-                    
+                    return np.array(tree.value[node], dtype=int).squeeze()
             recommendation_vote += traverse(0)
-        return feature_vote, self.compute_recommendation(recommendation_vote)
+        return feature_vote, self.compute_recommendation(user_information, recommendation_vote)
 
 class ProductRecommender():
     cache_dir = "cache/model"
