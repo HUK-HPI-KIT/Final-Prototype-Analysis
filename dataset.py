@@ -215,8 +215,17 @@ class TabularDataset(Dataset):
     def get_next_question(self, feature_vote):
         feature_to_ask = feature_vote.argmax()
         next_question = self.questions[self.user_feature_names()[feature_to_ask]]
-        next_question["key"] = feature_to_ask
-        return feature_to_ask
+        next_question["key"] = self.user_feature_names()[feature_to_ask]
+        
+        return next_question
     
-    def get_explanations(self, significant_features):
-        ...
+    def get_explanations(self, significant_features, user_information):
+        explanations = []
+        for significant_feature in significant_features:
+            if len(significant_feature) > 0:
+                feature_name = self.questions[significant_feature]["name"]
+                answer = self.questions[significant_feature]["answers"][user_information[self.user_feature_names().index(significant_feature)]]
+                explanations.append(f"weil du auf die Frage nach {feature_name} mit '{answer}' geantwortet hast.")
+            else:
+                explanations.append("")
+        return explanations

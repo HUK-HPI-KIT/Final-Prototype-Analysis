@@ -1,4 +1,5 @@
 import json
+from math import inf
 import numpy as np
 import argparse
 from typing import Union
@@ -22,13 +23,13 @@ def main(args: argparse.Namespace) -> None:
     user_data_array = train_dataset.create_user_data_array(user_data)
     recommendation, feature_request_vote, significant_features = recommender.infer(user_data_array)
     next_question = train_dataset.get_next_question(feature_request_vote)
-    explanations = train_dataset.get_explanations(significant_features)
+    explanations = train_dataset.get_explanations(significant_features, user_data_array)
     inference_result = {
         "recommendation": recommendation,
-        "fv": feature_request_vote.tolist(),
         "next_question": next_question,
+        "explanations": explanations,
     }
-    print(json.dumps(inference_result, indent=4))
+    print(json.dumps(inference_result, indent=4, ensure_ascii=False))
     
 
 if __name__ == "__main__":
