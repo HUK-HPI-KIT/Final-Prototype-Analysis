@@ -215,7 +215,7 @@ class TabularDataset(Dataset):
     def get_next_question(self, feature_vote):
         feature_to_ask = feature_vote.argmax()
         next_question = self.questions[self.user_feature_names()[feature_to_ask]]
-        next_question["key"] = self.user_feature_names()[feature_to_ask]
+        next_question["questionId"] = self.user_feature_names()[feature_to_ask]
         
         return next_question
     

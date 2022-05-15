@@ -24,10 +24,13 @@ def main(args: argparse.Namespace) -> None:
     recommendation, feature_request_vote, significant_features = recommender.infer(user_data_array)
     next_question = train_dataset.get_next_question(feature_request_vote)
     explanations = train_dataset.get_explanations(significant_features, user_data_array)
+    recommendation_objects = {
+        key: {"relevance": value[0], "confidence": value[1], "explanation": explanation}
+        for (key, value), explanation in zip(recommendation.items(), explanations)
+    }
     inference_result = {
-        "recommendation": recommendation,
+        "recommendation": recommendation_objects,
         "next_question": next_question,
-        "explanations": explanations,
     }
     print(json.dumps(inference_result, indent=4, ensure_ascii=False))
     
