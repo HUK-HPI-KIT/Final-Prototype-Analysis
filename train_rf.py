@@ -45,7 +45,7 @@ if __name__ == "__main__":
                      "printed to both the log file and stdout")
     parser.add_argument("--data-path", type=str, required=False, default=None,
                      help="path to dataset json")
-    parser.add_argument("--question-path", type=str, required=False, default=None,
+    parser.add_argument("--question-path", type=str, required=False, default="questions.json",
                      help="path to question json")
     parser.add_argument("--user-data", type=str, required=True,
                      help="json encoded user data")

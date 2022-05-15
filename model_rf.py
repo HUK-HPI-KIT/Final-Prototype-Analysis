@@ -47,8 +47,6 @@ class ProductForest(RandomForestClassifier):
                         child_node = tree.children_right[node]
                     child_impurity = min(tree.value[child_node].squeeze()) / sum(tree.value[child_node].squeeze())
                     impurity_decrease = own_impurity - child_impurity
-                    # print(impurity_decrease, own_impurity, min(tree.value[node]), sum(tree.value[node]), tree.value[node])
-                    # print("child:", child_impurity, min(tree.value[child_node]), sum(tree.value[child_node]), tree.value[child_node])
                     if impurity_decrease > biggest_impurity_decrease:
                         biggest_impurity_decrease = impurity_decrease
                         most_important_feature_idx = feature_idx
