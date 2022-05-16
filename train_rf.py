@@ -1,15 +1,8 @@
 import json
-from math import inf
-import numpy as np
 import argparse
-from typing import Union
 import logging
-import random
-from pathlib import Path
-from transformers import AutoTokenizer, Trainer, TrainingArguments
-from dataset import ProductDataset, TabularDataset
+from dataset import TabularDataset
 from model_rf import ProductRecommender
-from sklearn.model_selection import train_test_split
 
 from utils import set_logging
 
@@ -17,13 +10,19 @@ def main(args: argparse.Namespace) -> None:
     set_logging(args.log_file, args.log_level, args.log_stdout)
     
     train_dataset = TabularDataset(args.question_path, args.data_path, args.force_rebuild)
+    logging.info("Dataset loaded!")
     recommender = ProductRecommender(train_dataset, args.force_train)
+    logging.info("model created!")
     
     user_data = json.loads(args.user_data)
+    logging.info(f"got user data: {json.dumps(user_data, indent=4)}")
     user_data_array = train_dataset.create_user_data_array(user_data)
     recommendation, feature_request_vote, significant_features = recommender.infer(user_data_array)
+    logging.info("Inference completed!")
     next_question = train_dataset.get_next_question(feature_request_vote)
+    logging.info("next question obtained!")
     explanations = train_dataset.get_explanations(significant_features, user_data_array)
+    logging.info("explanation generated!")
     recommendation_objects = {
         key: {"relevance": value[0], "confidence": value[1], "explanation": explanation}
         for (key, value), explanation in zip(recommendation.items(), explanations)
